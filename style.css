@@ -1,0 +1,90 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+body
+{
+    background-image: url(fx1.jpg);
+    background-size: cover;
+    background-position:center ;
+    font-family: sans-serif;
+    background-attachment: fixed;
+}
+
+.menu
+{
+    background: rgb(111, 182, 176);
+    text-align: center; 
+   
+}
+
+.menu ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: rgb(0, 0, 0);
+}
+
+.menu ul li
+{
+    width: 85px;
+    margin: 15px;
+    padding:15px;
+}
+
+.menu ul li a
+{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+}
+
+.active,.menu ul li:hover
+{
+    background:#999998 ;
+    border-radius: 70px;
+}
+
+.sub-menu-1
+{
+    display: none;
+}
+
+.menu ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute; 
+    background:rgb(111, 182, 176);
+    margin-top: 15px;
+    margin-left: -40px; 
+   
+}
+
+.menu ul li:hover .sub-menu-1 ul
+{
+    display: block;
+    margin: 10px;
+   
+}
+.menu ul li:hover .sub-menu-1 ul li
+{
+    width:150px;
+    padding: 10px;
+    border-bottom: 1px dotted rgb(0, 0, 0);
+    background: transparent;
+    border-radius: 100;
+    text-align: left;
+}
+
+.menu ul li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+
+}
+
+.menu ul li:hover .sub-menu-1 ul li a:hover 
+{
+    color: rgb(102, 61, 141);
+}
